@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey</title>
+        <link rel="stylesheet" href="style_survey.css"/>
+    </head>
+    <body>
+        <div>
+            <form>
+                <h3>Let us know how can improve freeCode Camp</h3>
+                <label>*Name:</label>
+                <input type="text" id="name" required><br><br>
+                <label>*Email:</label>
+                <input type="email" id="email" required><br><br>
+                <label>*Age:</label>
+                <input type="number" min="1" max="100"><br><br>
+                <label>Which option best describes your current role?</label>
+                <select required>
+                    <option value="Student">Student</option>
+                    <option value="Developer">Developer</option>
+                    <option value="Tester">Tester</option>
+                    <option value="Teacher">Teacher</option>
+                </select><br><br>
+                <div class="div2">
+                <label class="checklbl">*How likely is that you would recommend freeCodeCamp to a friend?</label>
+                </div>
+                <div class="div1">
+                <input class="check" type="radio"  value="Definitely">
+                <label>Definitely</label><br>
+                <input class="check" type="radio" value="May be">
+                <label>May Be</label><br>
+                <input class="check" type="radio" value="Not Sure">
+                <label>Not Sure</label><br><br>
+                </div><br>
+                <label>What do you like most in FCC</label>
+                <select>
+                    <option>Select Option</option>
+                    <option value="Developer">Developer</option>
+                    <option Value="Tester">Tester</option>
+                    <option value="Teacher">Teacher</option>
+                </select><br><br>
+                <label style="display: inline-block;">Things that should be improved in the future (Check all that apply):</label>
+                <div style="display: inline-block;">
+                    <input type="checkbox" value="Front-end Projects">
+                    <label>Front-end Projects</label><br>
+                    <input type="checkbox" value="Back-end Projects">
+                    <label>Back-end Projects</label><br>
+                    <input type="checkbox" value="Data Visualization">
+                    <label>Data Visualization</label>
+
+                </div>
+                    
+                <br><br>
+                <input style="background-color: blue;" type="submit">
+                
+                
+            </form>
+        </div>
+        
+    </body>
+</html>

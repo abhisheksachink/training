@@ -1,0 +1,46 @@
+/*
+Assignment 1
+
+CSS – Day 1 Assignment 
+
+1. Entire page content should be centered. 
+2. Text in each and every cell of your table should be centered. 
+3. Text in table header should be capitalized. 
+4. Make sure your hyperlinks are not underlined and they appear 
+   in ." green color. 
+5. Make sure you have at least 5 paragraph tags in your html file. 
+Change the background color of only even number of paragraphs 
+from the beginning. 
+6. Use text shadow in some places to make your page look better. 
+*/
+*{
+    text-align: center;
+}
+A{
+    text-decoration: none;
+    color: green;
+}
+table{
+    text-align: center;
+    margin: auto;
+}
+table >th {
+    text-transform: capitalize;
+}
+p{
+    text-decoration: none;
+}
+#para1{
+    text-shadow: 2px 2px 5px red;
+
+}
+p:nth-child(odd) { background-color: red; }
+li{
+    text-align: center;
+    list-style-position: inside;
+}
+#bihar{
+    background-image: url(india-flag.jpg);
+    background-size: auto;
+    background-repeat: repeat;
+}

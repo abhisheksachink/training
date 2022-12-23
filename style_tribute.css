@@ -1,0 +1,174 @@
+
+#div1{
+display: inline-block;
+width: 60%;
+}
+#div2{
+    display: inline-block;
+    width: 30%;
+}
+#image1{
+    text-align: center;
+}
+#image{
+    box-sizing: border-box;
+    border: 2px;
+    border-radius: 3px;
+    border-color: blue;
+}
+body{
+    background-color:yellowgreen;
+}
+h1{
+    background-color: brown;
+}
+h2{
+    background-color: aqua;
+}
+#list{
+    background-image: url(background.jpg);
+}
+#assign1{
+    border-style: solid;
+    border-width: 2px;
+    width: 300px;
+
+    
+}
+table{
+    border-style: solid ;
+    border-width: 1px;
+    border-color: black;
+    width: 300px;
+
+}
+
+.redbox{
+    background-color: rgb(230, 112, 131);
+    width: 100px;
+    height: 30px;
+    
+}
+.bluebox{
+    background-color: rgb(69, 69, 236);
+    width: 200px;
+    height: 30px;
+}
+.yellobox{
+    background-color: rgb(247, 192, 42);
+    height: 30px;
+    width: 300px;
+}
+#right1,#right2,#right3{
+
+    /* display: inline; */
+    position: absolute;
+    background-color: rgb(230, 112, 131);
+    width: 100px;
+    height: 40px;
+
+
+
+}
+#left1,#left2,#left3{
+    position: relative;
+    /* padding-right: 10px; */
+    margin-left: 120px;
+    background-color: rgb(69, 69, 236);
+    width: 200px;
+    height: 40px;
+
+}
+#border1{
+    width: 350px;
+    border-style: solid;
+    border-radius: 1px;
+
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+#mock{
+    border-style: solid;
+    margin-top: -10px;margin-left: -11px;
+}
+/* #head{
+    background-color: green;
+    grid-area: header;
+}
+#item1{
+    background-color: yellow;
+    grid-area: left;
+}
+#item2{
+    background-color: red;
+    grid-area: menu;
+}
+#item3{
+    background-color: blue;
+    grid-area: right;
+}
+#item4{
+    background-color: orange;
+    grid-area: footer;
+}
+#grid-container{
+    display: grid;
+    grid-template-areas: 'header header header'
+    'left menu right'
+    'left left right';
+    gap: 10px;
+    padding: 10px;
+} */
+
+.item1 { grid-area: header; 
+background-color: green;}
+.item2 { grid-area: menu; 
+background-color: yellow;
+}
+.item3 { grid-area: main; 
+background-color: red;}
+.item4 { grid-area: right; 
+background-color: blue;}
+.item5 { grid-area: footer; 
+background-color: orange;}
+
+/* .item2-1{
+    grid-area: left;
+}
+.item2-2{
+    grid-area: right;
+}
+.item2-3{
+    grid-area: menu;
+}
+.item2-4{
+    grid-area: footer;
+} */
+.item22{
+    display: grid;
+grid-template-columns: auto auto;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu menu main main right right'
+      'footer footer footer footer right right';
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+ 
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+  }
+  .item2-1,.item2-2,.item2-3,.item2-4{
+    background-color: white;
+    margin: 8px;
+
+  }

@@ -1,0 +1,124 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form action="ngo_register_success.html" method="post" name="ngo_form" onsubmit="return validateForm()">  
+<div class="container">  
+  <center>  <h1> NGO Registeration Form</h1> </center>  
+  <hr>  
+  <div>
+  <label for="userid">User Id:-</label>
+  <input id="userid1" type="text" name="userid" size="15" required/>
+  
+</div>
+<div>
+  <label> User Name </label>   
+<input type="text" name="username" id="username" placeholder= "User Name" size="15" required />   
+<p style="color: red;" id="validname"></p>
+</div>
+
+
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" class="gender" value="Male" name="gender" checked > Male   
+<input type="radio" class="gender" value="Female" name="gender"> Female   
+<input type="radio" class="gender" value="Other" name="gender"> Other  
+  
+</div>  
+
+<div>
+    <label>   
+    Hobbies :  
+    </label>  
+    <input type="text" id="hobby" name="hobbies"/>  
+    </div>
+<div> 
+<label for="education">Education Qualification :</label>
+<input type="text" id="education" name="education" placeholder="Education Qualificatio" size="10"/ required> 
+
+</div>
+
+Current Address :  
+<textarea cols="80" rows="5" id="address" placeholder="Current Address" value="address" required>  
+</textarea>  
+
+  
+    <label for="psw"><b>Password</b></label>  
+    <input type="password" id="pass" placeholder="Enter Password" name="psw" required>  
+    <p style="color: red;" id="validpass"></p>
+  
+    <label for="psw-repeat"><b>Re-type Password</b></label>  
+    <input type="password" id="repass" placeholder="Retype Password" name="psw-repeat" required>  
+    <p style="color: red;" id="validrepass"></p>
+    <div>  
+        <label for="certification">Certification : </label> 
+        <select name="certificate" id="certificate">  
+        <option value="business">Business</option>  
+        <option value="digital marketing">Digital Marketing</option>  
+        <option value="ngo certificate">ngo certificate</option>  
+        <option value="social certificate">social certificate</option>  
+        <option value="NCC Certification">NCC Certification</option>  
+        </select>  
+        </div> 
+        <div>
+            <label>   
+            Date of Birth :  
+            </label>  
+            <input type="date" id="dob" name="dob"/>  
+            </div> 
+    <div>
+        <label for="email"><b>Email</b></label>  
+        <input type="email" id="email" placeholder="Enter Email" name="email" required>  
+       </div>
+    <button type="submit" class="registerbtn">Register</button>    
+</form>  
+<script src="ngo.js"></script>
+</body>  
+</html>  

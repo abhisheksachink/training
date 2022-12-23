@@ -1,0 +1,67 @@
+let students=["John","Peter","Rohan","Jyothi"]
+undefined
+console.log(students);
+VM236:1 (4) ['John', 'Peter', 'Rohan', 'Jyothi']
+undefined
+students[2]
+'Rohan'
+console(students[students.length -1])
+VM343:1 Uncaught TypeError: console is not a function
+    at <anonymous>:1:1
+(anonymous) @ VM343:1
+console.log(students[students.length -1])
+VM360:1 Jyothi
+undefined
+students[4]="Norah"
+'Norah'
+console.log(students);
+VM493:1 (5) ['John', 'Peter', 'Rohan', 'Jyothi', 'Norah']
+undefined
+students.push("Abhi")
+6
+console.log(students);
+VM619:1 (6) ['John', 'Peter', 'Rohan', 'Jyothi', 'Norah', 'Abhi']
+undefined
+students.pop();students.pop();
+'Norah'
+console.log(students);
+VM695:1 (4) ['John', 'Peter', 'Rohan', 'Jyothi']
+undefined
+students.shift();
+'John'
+console.log(students);
+VM821:1 (3) ['Peter', 'Rohan', 'Jyothi']
+undefined
+students.unshift("abhi");
+4
+console.log(shift);
+VM982:1 Uncaught ReferenceError: shift is not defined
+    at <anonymous>:1:13
+(anonymous) @ VM982:1
+console.log(students);
+VM1032:1 (4) ['abhi', 'Peter', 'Rohan', 'Jyothi']
+undefined
+let newstud=students;
+undefined
+newstud.push("hii");
+5
+console.log(newstud);console.log(students):
+VM1284:1 Uncaught SyntaxError: Unexpected token ':'
+console.log(newstud);console.log(students);
+VM1292:1 (5) ['abhi', 'Peter', 'Rohan', 'Jyothi', 'hii']
+VM1292:1 (5) ['abhi', 'Peter', 'Rohan', 'Jyothi', 'hii']
+undefined
+let a=5;let b='5';console.log(a==b);console.log(a===b);console.log(typeof(a);console.log(typeof(b);
+VM1588:1 Uncaught SyntaxError: missing ) after argument list
+let a=5;let b='5';
+undefined
+console.log(a==b);
+VM1629:1 true
+undefined
+console.log(a===b);
+VM1650:1 false
+undefined
+console.log(typeof(a));console.log(typeof(b));
+VM1691:1 number
+VM1691:1 string
+undefined

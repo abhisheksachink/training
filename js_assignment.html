@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee</title>
+    </head>
+    <body>
+        <h4>Employee Details Form</h4>
+        <form  name="myForm" action="employee.html"  onsubmit="return validateForm()" >
+            <label for="name">Name:- </label>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="empid">Emp Id:-</label>
+            <input type="number" name="empid" id="empid"><br><br>
+            <label for="doj">Joining Date:-</label>
+            <input type="date" name="doj" id="doj"><br><br>
+            <label for="workhr">Hours Worked:-</label>
+            <input type="number" name="workhr" id="hr"><br><br>
+            <label for="desig">Designation:- </label>
+            <select name="desig" id="desig">
+                <option value="manager">Manager</option>
+                <option value="Consultant">Consultant</option>
+                <option value="Trainee">Trainee</option>
+
+            </select><br><br>
+            <!-- <input type="button"value="Click for Submit">
+            <div id="emp_sal"></div> -->
+            
+            <input type="submit" value="SUBMIT">
+        </form>
+        <script src="employee.js"></script>
+    </body>
+</html>

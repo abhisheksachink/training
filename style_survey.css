@@ -1,0 +1,15 @@
+
+form{
+    text-align: center;
+}
+.div2{
+    display: inline-block;
+    
+}
+.div1{
+
+    display: inline-block;
+}
+input:focus{
+    background-color: green;
+}
