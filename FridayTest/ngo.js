@@ -37,7 +37,10 @@ function validateForm() {
 
         }
     else{
-          return  true;
+        
+        // return true;
+        return dosome();
+    
         }
 
     // else{
@@ -45,7 +48,27 @@ function validateForm() {
     // }
     
 
+function dosome(){
+    var userid=document.ngo_form.userid1.value;
+        var usernam=document.ngo_form.username.value;
+        var dob1=document.ngo_form.dob.value;
+        var hobbies =document.ngo_form.hobby.value;
+        var edu =document.ngo_form.education.value;
+        var address=document.ngo_form.address.value;
+        var gender =document.ngo_form.gender.value;
+        var certif =document.ngo_form.certificate.value;
+        var email=document.ngo_form.email.value;
 
+            localStorage.setItem('userid',userid);
+            localStorage.setItem('username',usernam);
+            localStorage.setItem('userdob',dob1);
+            localStorage.setItem('hoby',hobbies);
+            localStorage.setItem('educ',edu);
+            localStorage.setItem('address',address);
+            localStorage.setItem('gender',gender);
+            localStorage.setItem('certific',certif);
+            localStorage.setItem('email',email);
+}
 
 
 }
@@ -55,4 +78,5 @@ function showuser(){
     document.getElementById("userid1").value =userid;
 
 }
+
 window.onload = showuser;
