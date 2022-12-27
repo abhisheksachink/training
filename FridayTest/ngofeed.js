@@ -1,4 +1,4 @@
-let sh=localStorage.getItem(userid);
+
 function showdetail(){
 
 
@@ -16,6 +16,7 @@ function showdetail(){
 
 
 }
+
 
 
 // var a="hi"
